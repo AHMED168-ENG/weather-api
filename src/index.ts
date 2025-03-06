@@ -47,9 +47,11 @@ class WeatherAPI {
   private initializeRoutes(): void {
     this.app.use("/api", AppRouter);
   }
+
   private async connectDatabase(): Promise<void> {
     await Database.getInstance().connect();
   }
+
   private initializeMonitoring(): void {
     const collectDefaultMetrics = client.collectDefaultMetrics;
     collectDefaultMetrics();
@@ -94,6 +96,15 @@ if (cluster.isPrimary) {
   cluster.on("exit", (worker) => {
     Logger.error(`⚠️ Worker ${worker.process.pid} died. Restarting...`);
     cluster.fork();
+  });
+
+  // Graceful Shutdown
+  process.on("SIGINT", () => {
+    Logger.info("Gracefully shutting down...");
+    cluster.disconnect(() => {
+      Logger.info("All workers have been gracefully shut down.");
+      process.exit(0);
+    });
   });
 } else {
   new WeatherAPI();

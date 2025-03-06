@@ -18,7 +18,6 @@ class WeatherService {
       baseURL: this.apiUrl,
       timeout: 5000,
     });
-    // التأكد من أن `httpClient` صالح قبل تطبيق axiosRetry
     if (this.httpClient) {
       axiosRetry(this.httpClient, {
         retries: 3,
