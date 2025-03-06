@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1741256568701" clover="3.2.0">
-  <project timestamp="1741256568701" name="All files">
-    <metrics statements="127" coveredstatements="78" conditionals="42" coveredconditionals="17" methods="26" coveredmethods="16" elements="195" coveredelements="111" complexity="0" loc="127" ncloc="127" packages="3" files="7" classes="7"/>
+<coverage generated="1741258744570" clover="3.2.0">
+  <project timestamp="1741258744570" name="All files">
+    <metrics statements="127" coveredstatements="83" conditionals="42" coveredconditionals="22" methods="26" coveredmethods="17" elements="195" coveredelements="122" complexity="0" loc="127" ncloc="127" packages="3" files="7" classes="7"/>
     <package name="models">
       <metrics statements="14" coveredstatements="9" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="0"/>
       <file name="UserModel.ts" path="D:\node typescript\weather-api\src\models\UserModel.ts">
@@ -26,7 +26,7 @@
       </file>
     </package>
     <package name="services">
-      <metrics statements="101" coveredstatements="59" conditionals="33" coveredconditionals="13" methods="18" coveredmethods="11"/>
+      <metrics statements="101" coveredstatements="64" conditionals="33" coveredconditionals="18" methods="18" coveredmethods="12"/>
       <file name="AuthService.ts" path="D:\node typescript\weather-api\src\services\AuthService.ts">
         <metrics statements="16" coveredstatements="15" conditionals="1" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="1" count="1" type="stmt"/>
@@ -90,7 +90,7 @@
         <line num="86" count="1" type="stmt"/>
       </file>
       <file name="WeatherService.ts" path="D:\node typescript\weather-api\src\services\WeatherService.ts">
-        <metrics statements="45" coveredstatements="26" conditionals="23" coveredconditionals="10" methods="9" coveredmethods="5"/>
+        <metrics statements="45" coveredstatements="31" conditionals="23" coveredconditionals="15" methods="9" coveredmethods="6"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -127,11 +127,11 @@
         <line num="74" count="1" type="stmt"/>
         <line num="76" count="1" type="stmt"/>
         <line num="80" count="1" type="stmt"/>
-        <line num="88" count="0" type="stmt"/>
-        <line num="89" count="0" type="stmt"/>
-        <line num="93" count="0" type="stmt"/>
-        <line num="95" count="0" type="stmt"/>
-        <line num="99" count="0" type="stmt"/>
+        <line num="88" count="2" type="stmt"/>
+        <line num="89" count="2" type="stmt"/>
+        <line num="93" count="1" type="stmt"/>
+        <line num="95" count="1" type="stmt"/>
+        <line num="99" count="1" type="stmt"/>
         <line num="104" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="105" count="0" type="stmt"/>
         <line num="106" count="0" type="stmt"/>
@@ -146,16 +146,16 @@
         <line num="3" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
         <line num="8" count="2" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
       </file>
       <file name="Logger.ts" path="D:\node typescript\weather-api\src\utils\Logger.ts">
         <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="4" methods="4" coveredmethods="4"/>
         <line num="1" count="2" type="stmt"/>
         <line num="7" count="2" type="stmt"/>
-        <line num="12" count="4" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
         <line num="23" count="2" type="stmt"/>
-        <line num="27" count="2" type="cond" truecount="4" falsecount="2"/>
+        <line num="27" count="3" type="cond" truecount="4" falsecount="2"/>
         <line num="31" count="2" type="stmt"/>
       </file>
     </package>
